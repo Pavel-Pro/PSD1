@@ -340,7 +340,7 @@
 		opacity: 1;
 	}
 	.burger__item-top {
-		transform: rotate(-40deg) translateX(-4px) translateY(2px);
+		transform: rotate(-43deg) translateX(-5px) translateY(2px);
 		transition: 0.5s;
 		z-index: 3;
 	}
@@ -349,7 +349,7 @@
 		opacity: 0;
 	}
 	.burger__item-bottom {
-		transform: rotate(40deg) translateX(-3px) translateY(-1px);
+		transform: rotate(43deg) translateX(-3px) translateY(-1px);
 		transition: 0.5s;
 		z-index: 3;
 	}
@@ -579,7 +579,7 @@
 	}
 	.our-focus__item {
 		margin-right: 0;
-		flex: 0 1 100%;
+		flex: 0 1 80%;
 		margin-bottom: 2em;
 	}
 	.our-focus__item:nth-child(3n) {
