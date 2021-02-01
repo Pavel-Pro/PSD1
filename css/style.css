@@ -157,7 +157,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	transform: translate(3%,0);
+	transform: translate(8%,0);
 }
 .marker__item {
 	margin-right: 5em;
@@ -361,7 +361,7 @@
 /*Окончание экрана видео*/
 /*Начало экрана Портфолио*/
 .portfolio {
-	background-color: var(--bg-c-g);
+	background-color: var(--c-w);
 	padding-bottom: 7.5em;
 }
 .title__portfolio:after {
@@ -378,7 +378,6 @@
 	 margin-bottom: 1.4em;
 	 position: relative;
 	 cursor: pointer;
-	 border: 3px  solid var(--c-w);
 }
 .gallery__text {
 	position: absolute;
@@ -387,16 +386,16 @@
 	opacity: 0;
 	width: 100%;
 	padding: 0 0;
+	background-color: transparent;
 	text-align: center;
-	background-color: var(--c-w);
 	font-family: var(--f-f);
 	font-size: 1em;
 	border-top: 4px solid;
 	border-image: url(../image/bb-lines.png);
 	border-image-repeat: stretch;
 	border-image-slice: 3;
-	transition-property: padding. opacity;
-	transition-duration: 0.5s;
+	transition-property: padding, opacity, background-color;
+	transition-duration: 0.5s, 0.5s, 0.7s;
 }
 .gallery__item:before {
 	content: "";
@@ -420,12 +419,466 @@
 .gallery__item:hover .gallery__text {
 	opacity: 1;
 	padding: 1.6em 0;
+	background-color: var(--c-w);
 }
 .gallery__item:hover:before {
 	opacity: 1;
 }
-
+.our-team__title:after {
+	content: "04";
+}
 /*Окончание экрана Портфолио*/
+/*Начало экрана Our Team*/
+.our-team {
+	background-color: var(--bg-c-g);
+	padding-bottom: 7.5em;
+}
+.our-team__items {
+	margin-top: 4em;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.our-team__item {
+	border-top: 3px solid var(--c-w);
+	border-left: 3px solid var(--c-w);
+	border-right: 3px solid var(--c-w);
+	background-color: var(--c-w);
+}
+.our-team__item-r{
+	border-bottom: 3px solid var(--c-r);
+}
+.our-team__item-g {
+	border-bottom: 3px solid var(--c-g);
+}
+.our-team__item-p{
+	border-bottom: 3px solid var(--c-p);
+}
+.our-team__item-o{
+	border-bottom: 3px solid var(--c-o);
+}
+.our-team__name {
+	font-family: var(--f-f);
+	font-size: 1em;
+	margin-top: 1.1em;
+	margin-bottom: 0.7em;
+}
+.our-team__position {
+	margin-bottom: 1.1em;
+}
+.about-person {
+	margin: 2.6em 1.2em 0;
+	background-color: var(--c-w);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 3.8em 5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.about-person:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+    top: -55px;
+    left: 100px;
+    border: 1em solid rgb(0 0 0 / 0%);
+    border-bottom: 2.5em solid var(--c-w);
+}
+.about-person__item + .about-person__item {
+	margin-left: 1.8em;
+}
+.about-person__item-big {
+	flex: 0 1 85%;
+	position: relative;
+	background: url(../image/icon/team-i.png) right center/auto no-repeat;
+}
+.about-person__item-small {
+	flex: 0 0 15%;
+	margin-left: auto;
+	border-left: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 1.1em;
+}
+.about-person__title {
+	margin-bottom: 1.5em;
+	font-family: var(--f-f);
+	font-size: 1.2rem;
+}
+.about-person__text {
+	font-size: 1rem;
+	width: 75%;
+}
+.team-social {
+	list-style: none;
+}
+.team-social__item {
+	line-height: 1.7;
+}
+.team-social__link {
+	text-decoration: none;
+	margin-left: 0.4em;
+	color: var(--t-c-b);
+	font-size: 0.9rem;
+}
+/*Окончание экрана Our Team*/
+/*Начало экрана Statistics*/
+.statistics {
+	padding: 7.5em;
+	background: url(../image/statistics__bg.png) 
+				center center/cover no-repeat;
+	background-color: var(--bg-c-b);
+	background-blend-mode: darken;
+}
+.statistics__items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.statistics__item {
+	flex: 1 1 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.statistics__number {
+	display: block;
+	color: var(--c-w);
+	font-family: var(--f-f);
+	font-size: 1.2rem;
+	margin: 1.4em 0;
+}
+.statistics__text {
+	color: rgb(254, 254, 254);
+	font-size: 0.8em;
+}
+.statistics__dashed {
+	margin-top: 2em;
+	width: 0.4em;
+	height: 0.4em;
+	display: block;
+	border-radius: 10px;
+	position: relative;
+}
+.statistics__dashed:after {
+	content: "";
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	transform: translate(30%,30%);
+	width: 0.7em;
+	height: 0.7em;
+	border-size: 2px;
+	border-style: solid;
+	border-radius: 10px;
+}
+.statistics__dashed-r {
+	background-color: var(--c-r);
+}
+.statistics__dashed-r:after {
+	border-color: var(--c-r);
+}
+.statistics__dashed-g {
+	background-color: var(--c-g);
+}
+.statistics__dashed-g:after { 
+	border-color: var(--c-g);
+}
+.statistics__dashed-p {
+	background-color: var(--c-p);
+}
+.statistics__dashed-p:after {
+	border-color: var(--c-p);
+}
+.statistics__dashed-o {
+	background-color: var(--c-o);
+}
+.statistics__dashed-o:after {
+	border-color: var(--c-o);
+}
+/*Окончания экрана Statistics*/
+/*Начало экрана Work Steps*/
+.work-steps {
+	background-color: var(--c-w);
+}
+.work-steps__title:after {
+	content: "05";
+}
+.work-steps__items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 6.7em 0 7.5em;
+}
+.work-steps__item {
+	flex: 1 1 25%;
+	position: relative;
+	z-index: 3;
+}
+.work-steps__img {
+	display: block;
+}
+.steps {
+	max-width: 90%;
+	height: 100%;
+	padding: 3em 2.8em 0 6.5em;
+	position: absolute;
+	z-index: 5;
+	background-color: var(--c-w);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+.steps-left {
+	top: -20%;
+	left: -60%;
+}
+.steps-right {
+	top: -20%;
+	right: -60%;
+}
+.steps-r {
+	border-bottom: 3px solid var(--c-r);
+}
+.steps-g {
+	border-bottom: 3px solid var(--c-g);
+}
+.steps-p{
+	border-bottom: 3px solid var(--c-p);
+}
+.steps-o{
+	border-bottom: 3px solid var(--c-o);
+}
+.steps__title {
+	font-size: 1.5rem;
+	margin-bottom: 1.3em;
+}
+.steps__title:before {
+	content: "01";
+	position: absolute;
+    top: 20%;
+    left: 7%;
+	font-size: 2.5rem;
+	font-family: "Libre Baskerville Bold";
+	color: rgb(0, 0, 0, 0.1);
+	line-height: 0;
+}
+.steps__title-02:before {
+	content: "02";
+}
+.steps__title-03:before{
+	content: "03";
+}
+.steps__title-04:before{
+	content: "04";
+}
+.steps__title:after {
+	content: "";
+	position: absolute;
+	top: 25%;
+	left: 9%;
+	width: 80px;
+	height: 3px;
+	background-color: rgba(0, 0, 0, 0.1);
+	transform: rotate(130deg);
+}
+.steps__text {
+	font-size: 0.9rem;
+}
+/*Окончания экрана Work Steps*/
+/*Начало экрана Pricing Table*/
+.pricing {
+	background-color: var(--bg-c-g);
+}
+.pricing__title:after {
+	content: "06";
+}
+.pricing__items {
+	margin-top: 5.5em;
+	padding-bottom: 7.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pricing__item {
+	background: var(--c-w);
+	flex: 0 1 28%;
+}
+.pricing__item + .pricing__item {
+	margin-left: 3em;
+}
+.pricing__item-g {
+	border-top: 3px solid var(--c-g);
+}
+.pricing__item-r {
+	border-top: 3px solid var(--c-r);
+}
+.pricing__item-p {
+	border-top: 3px solid var(--c-p);
+}
+.price__title {
+	margin: 1.5em 0 1.3em;
+	text-align: center;
+	font-family: var(--f-f);
+	font-size: 1.2em;
+}
+.price-info {
+	width: 30%;
+	text-align: center;
+	margin: 0 auto 2em;
+	border: 1px solid transparent;
+	border-radius: 60px;
+	padding: 1.3em 0;
+	position: relative;
+}
+.price-info-g {
+	background: var(--c-g);
+}
+.price-info-g:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	right: 0%;
+    transform: translate(7%,-7%);
+    width: 110%;
+    height: 110%;
+	border: 3px solid var(--c-g);
+	border-radius: 100px;
+}
+.price-info-r {
+	background: var(--c-r);
+}
+.price-info-r:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	right: 0%;
+    transform: translate(7%,-7%);
+    width: 110%;
+    height: 110%;
+	border: 3px solid var(--c-r);
+	border-radius: 100px;
+}
+.price-info-p {
+	background: var(--c-p);
+}
+.price-info-p:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	right: 0%;
+    transform: translate(7%,-7%);
+    width: 110%;
+    height: 110%;
+	border: 3px solid var(--c-p);
+	border-radius: 100px;
+}
+.price-info_cost {
+	color: var(--c-w);
+	font-size: 1.5rem;
+}
+.price-info__date {
+	font-size: 0.7rem;
+	color: var(--c-w);
+}
+.service-list__items {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.service-list__item + .service-list__item {
+	margin-top: 1.2em;
+}
+.service-list__text-bold {
+	font-weight: 700;
+	margin-right: 0.3em;
+}
+.list-chek {
+	font-size: 0.9rem;
+	margin-right: 0.4em;
+	vertical-align: center;
+}
+.price__button {
+	margin: 0 auto 1.8em;
+	display: block;
+	padding: 0.7em 1.7em;
+	font-size: 0.9em;
+}
+.price__button-g {
+	background: transparent;
+	border-color: var(--c-g);
+	color: var(--c-g);
+	transition-property: color, background-color;
+	transition: 0.8s, 0.7s;
+}
+.price__button-g:hover {
+	background: var(--c-g);
+	color: var(--c-w);
+}
+.price__button-p {
+	background: transparent;
+	border-color: var(--c-p);
+	color: var(--c-p);
+	transition-property: color, background-color;
+	transition: 0.8s, 1s;
+}
+.price__button-p:hover {
+	background: var(--c-p);
+	color: var(--c-w);
+}
+/*Окончания экрана Pricing Table*/
+/*Начало Testimonials*/
+.testimonials {
+	background: url(../image/testimonial-bg.png) 
+				center center/cover no-repeat var(--bg-c-b);
+	background-blend-mode: darken;
+	padding-bottom: 7.5em;
+}
+.title__testimonials {
+	color: var(--c-w);
+}
+.title__testimonials:after {
+	content: "07";
+	color: rgba(255, 255, 255, 0.2);
+}
+.text__testimonials {
+	color: var(--c-w);
+}
+.testimonials__items {
+	margin-top: 4.5em;
+}
+.testimonials__item {
+	position: relative;
+}
+.testimonials__photo {
+	border: 5px solid rgb(0, 0, 0, 0.4);
+	z-index: 3;
+	position: relative;
+}
+.testimonials-info {
+	position: absolute;
+    top: 20%;
+    left: 30%;
+	color: var(--t-c-b);
+	background: var(--c-w);
+	width: 60%;
+	margin-left: auto;
+	padding: 2.3em 3.6em 2em 3.3em;
+	border-bottom: 3px solid var(--c-r);
+	z-index: 1;
+}
+.testimonials-info__text {
+	font-size: 0.8rem;
+	margin-bottom: 3em;
+}
+.testimonials-info_name {
+	font-family: var(--f-f);
+	margin-bottom: 0.5em;
+}
+.testimonials-info__position {
+	font-size: 0.7rem;
+	color: var(--c-r);
+}
+/*Окончание секции Testimonials*/
 /*Адаптивная вёрстка*/
 @media (max-width: 1700px) {
 	:root {
