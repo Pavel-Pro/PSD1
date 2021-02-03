@@ -44,6 +44,12 @@
 	--f-f: "Poppins Medium";
 	--btn-c: rgb(252, 95, 69);
 }
+html {
+	scroll-behavior: smooth;
+}
+:target {
+	scroll-margin-top: 4em;
+}
 .page {
 	font-family: "Poppins Regular";
 	color: rgb(97, 97, 97);
@@ -879,6 +885,84 @@
 	color: var(--c-r);
 }
 /*Окончание секции Testimonials*/
+/*Начало экрана Why Select Us*/
+.select-us {
+	padding-bottom: 7.5em;
+}
+.select-us__title:after {
+	content: "08";
+}
+.select-us__items {
+	margin: 3.9em 0 4.5em 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.select-us__item {
+	flex: 0 0 28%;
+	margin: 0 3em 3.5em 0;
+}
+.select-us__item:nth-child(3n) {
+	margin-right: 0;
+}
+.select-us__item-top {
+	display: flex;
+	margin-bottom: 1.7em;
+}
+.select-us__item-title {
+	margin-left: 0.7em;
+	line-height: 1.4;
+	font-family: var(--f-f);
+}
+.select-us__text {
+	font-size: 0.8rem;
+}
+.select-us__footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.select-us__footer-text {
+	margin-right: 1.1em;
+}
+.select-us__footer-button {
+	padding: 1em 2em;
+	font-size: 0.7rem;
+}
+/*Окончание экрана Why Select Us*/
+/*Начало экрана Our Blog*/
+.our-blog {
+	background: var(--bg-c-g);
+	padding-bottom: 7.5em;
+}
+.our-blog__title:after {
+	content: "09";
+}
+
+.our-blog__items {
+	margin-top: 3.9em;
+	display: flex;
+	justify-content: space-between;
+}
+.blog-main {
+	border-bottom: 3px solid var(--c-r);
+	margin-right: 1.5em;
+	display: flex;
+	flex-direction: column;
+	background: var(--c-w);
+}
+.blog-main__title {
+	margin: 1.6em 2.4em 1.2em;
+	font-family: var(--f-f);
+	font-size: 1.2rem;
+}
+.blog-main__text {
+	margin: 0 3.5em 3em;
+	font-size: 0.8rem;
+}
+/*Окончание экрана Our Blog*/
+/*Начало экрана Subscribe*/
+/*Окончание секции Subscribe*/
 /*Адаптивная вёрстка*/
 @media (max-width: 1700px) {
 	:root {
