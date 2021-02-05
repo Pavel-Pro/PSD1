@@ -488,7 +488,7 @@
 	</section>
 	<!-- Окончание секции Why Select Us -->
 	<!-- Начало экрана Our Blog -->
-	<section class="our-blog">
+	<section id="blog" class="our-blog">
 		<div class="wrapper">
 			<h2 class="title our-blog__title">Our Blog.</h2>
 			<p class="text">We understand your requirement and provide quality works.</p>
@@ -500,29 +500,32 @@
 					</h3>
 					<p class="blog-main__text">
 						Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
-						<span class="blog-main__text-bold">Read Full Article »</span>
+						<a  href="#" class="blog-main__link">Read Full Article »</a>
 					</p>
 				</div>
 				<div class="blogs">
 					<div class="blog blog-g">
-						<h3 class="blog__title">Damian Schreiber</h3>
+						<span class="blog__name blog__name-g">Damian Schreiber</span>
+						<h3 class="blog__title">Google Street View adds virtual reality support</h3>
 						<p class="blog__text">
 							Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm 
-							<span class="blog__text-g">Read Full Article</span>
+							<a href="#" class="blog__link blog__link-g">Read Full Article</a>
 						</p>
 					</div>
 					<div class="blog blog-p">
-						<h3 class="blog__title">Damian Schreiber</h3>
+						<span class="blog__name blog__name-p">Damian Schreiber</span>
+						<h3 class="blog__title">Google Street View adds virtual reality support</h3>
 						<p class="blog__text">
 							Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm 
-							<span class="blog__text-p">Read Full Article</span>
+							<a href="#" class="blog__link blog__link-p">Read Full Article</a>
 						</p>
 					</div>
 					<div class="blog blog-o">
-						<h3 class="blog__title">Damian Schreiber</h3>
+						<span class="blog__name blog__name-o">Damian Schreiber</span>
+						<h3 class="blog__title">Google Street View adds virtual reality support</h3>
 						<p class="blog__text">
 							Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm 
-							<span class="blog__text-o">Read Full Article</span>
+							<a href="#" class="blog__link blog__link-o">Read Full Article</a>
 						</p>
 					</div>
 				</div>
@@ -531,7 +534,70 @@
 	</section>
 	<!-- Окончание экрана Our Blog -->
 	<!-- Начало экрана Subscribe -->
+	<section class="subscribe">
+		<h3 class="subscribe__title">Subscribe to Newsletter</h3>
+		<form action="#" class="subscribe__form">
+			<input type="email" name="email" class="subscribe__email" placeholder="Enter your email">
+			<button class="button subscribe__button">Subscribe now</button>
+		</form>
+	</section>
 	<!-- Окончание секции Subscribe -->
+	<!-- Начало экрана Get in Touch -->
+	<section id="contact" class="get-in-touch">
+		<h2 class="title get-in-touch__title">Get in Touch</h2>
+		<p class="text">We understand your requirement and provide quality works</p>
+		<div class="wrapper">
+			<form action="" class="form">
+				<input type="text" name="name" class="form__item form__name"placeholder="Your Name">
+				<input type="email" name="email" class="form__item form__email"placeholder="Your Email">
+				<input type="text" name="sudject" class="form__item form__sudject"placeholder="Subject">
+				<input type="text" name="budget" class="form__item form__budget"placeholder="Project Budget">
+				<textarea name="yor-text" cols="30" rows="10" class="form__item form__text"placeholder="Your Message"></textarea>
+				<button class="form__item button form__button">Send Message</button>
+			</form>
+		</div>
+	</section>
+	<!-- Окончание секции Get in Touch -->
+	<!-- Начало секции Footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__items">
+				<div class="foter__item">
+					<img src="image/footer__logo.png" alt="" class="footer__logo">
+				</div>
+				<div class="foter__item">
+					<h5 class="footer__title footer__title-g">Alexis LLC.</h5>
+					<p class="footer__text">
+						4125 Brighton Circle Road<br> Little Falls, MN 56345
+					</p>
+				</div>
+				<div class="foter__item">
+					<h5 class="footer__title footer__title-p">Alexis LLC UK.</h5>
+					<p class="footer__text">
+						81 Golden Knowes Road<br> FRESHFIELD L37 6TP
+					</p>
+				</div>
+				<div class="foter__item">
+					<h5 class="footer__title footer__title-o">Follow Us.</h5>
+					<div class="footer__social">
+						<a href="#" class="footer__social-link">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+						<a href="#" class="footer__social-link">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+						<a href="#" class="footer__social-link">
+							<i class="fab fa-instagram-square"></i>
+						</a>
+						<a href="#" class="footer__social-link">
+							<i class="fab fa-google-plus-square"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>	
+	<!-- Окончание секции Footer -->
 	<script src="js/jquery-351.js"></script>
 	<script src="js/jQuerymigrate141.js"></script>
 	<script src="js/jquery-ui.js"></script>
