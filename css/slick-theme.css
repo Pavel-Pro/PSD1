@@ -22,8 +22,8 @@
     font-size: 0;
     line-height: 0;
 
-    position: relative;
-    bottom: 30px;
+    position: absolute;
+    top: 50%;
 
     display: block;
 
@@ -79,8 +79,8 @@
 
 .slick-prev
 {
-    right: 50px;
-
+    left: -25px;
+    display: none;
 }
 [dir='rtl'] .slick-prev
 {
@@ -89,7 +89,7 @@
 }
 .slick-prev:before
 {
-    content: '';
+    content: '←';
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -98,7 +98,8 @@
 
 .slick-next
 {
-    right: 0;
+    right: -25px;
+    display: none;
 }
 [dir='rtl'] .slick-next
 {
@@ -107,7 +108,7 @@
 }
 .slick-next:before
 {
-    content: '';
+    content: '→';
 }
 [dir='rtl'] .slick-next:before
 {
@@ -123,30 +124,35 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 0;
+    bottom: -2%;
+    right: 1%;
+    display: block;
 
-    display: flex;
-    justify-content: center;
-    width: 38%;
+    width: 100%;
     padding: 0;
     margin: 0;
 
     list-style: none;
 
-    text-align: center;
+    text-align: right;
 }
 .slick-dots li
 {
     position: relative;
 
-    display: flex;
+    display: inline-block;
 
     width: 20px;
     height: 20px;
-    margin: 0 0;
+    margin: 0 5px;
     padding: 0;
+    border: 2px solid var(--c-w);
+    border-radius: 20px;
 
     cursor: pointer;
+}
+.slick-dots li.slick-active {
+    border: 2px solid var(--c-r);
 }
 .slick-dots li button
 {
@@ -162,7 +168,7 @@
     cursor: pointer;
 
     color: transparent;
-    border: 0;
+    border: none;
     outline: none;
     background: transparent;
 }
@@ -179,12 +185,12 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 3rem;
     line-height: 20px;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
 
     width: 20px;
     height: 20px;
@@ -193,14 +199,13 @@
     text-align: center;
 
     opacity: 1;
-    color: rgb(208, 208, 208);
-    font-size: 40px;
+    color: transparent;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: rgb(113, 246, 235);
+    opacity: 1;
+    color: var(--c-r);
 }
