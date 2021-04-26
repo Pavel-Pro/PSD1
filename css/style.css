@@ -477,8 +477,8 @@ html {
 .our-team__item-o{
 	border-bottom: 3px solid var(--c-o);
 }
-.gellery__img {
-	text-align: center;
+.team__photo {
+	width: 100%;
 }
 .our-team__name {
 	font-family: var(--f-f);
@@ -1925,14 +1925,19 @@ html {
 	    padding-bottom: 2em;
 	}
 	.footer {
-	padding: 2em 0 3em;
+		padding: 2em 0 3em;
 	}
 	.footer__items {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		flex-wrap: wrap;
 		height: 10.5em;
 		margin: 0 -3em;
+	}
+	.footer__item:first-child {
+		flex: 1 1 100%;
+		text-align: center;
 	}
 	.footer__title {
 		font-family: var(--f-f);
