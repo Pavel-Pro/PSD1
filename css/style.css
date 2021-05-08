@@ -2009,7 +2009,7 @@ html {
 		margin-bottom: 2em;
 	}
 	.pricing__item + .pricing__item {
-	    margin-left: 2em;
+	    margin-left: 1.5em;
 	}
 	.testimonials__photo {
 	    max-width: 70%

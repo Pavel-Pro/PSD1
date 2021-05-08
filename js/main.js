@@ -81,7 +81,7 @@ $(document).ready(function() {
 				centerMode: true,
 				slidesToScroll: true,
 				centerMode: true,
-				centerPadding: '70px',
+				centerPadding: '30px',
 				focusOnSelect: true,
 				slidesToShow: 1
 			}
