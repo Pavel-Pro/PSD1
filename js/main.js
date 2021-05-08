@@ -51,6 +51,16 @@ $(document).ready(function() {
 		    		centerPadding: '40px',
 		    		slidesToShow: 2
 		    	}
+		    },
+		    {
+		    	breakpoint: 520,
+		    	settings: {
+		    		centerMode: true,
+		    		slidesToScroll: true,
+		    		centerMode: true,
+		    		centerPadding: '20px',
+		    		slidesToShow: 1
+		    	}
 		    }
 	    ]
 	});
@@ -63,6 +73,15 @@ $(document).ready(function() {
 				slidesToScroll: true,
 				centerMode: true,
 				centerPadding: '100px',
+				focusOnSelect: true,
+				slidesToShow: 1
+			},
+			breakpoint: 520,
+			settings: {
+				centerMode: true,
+				slidesToScroll: true,
+				centerMode: true,
+				centerPadding: '70px',
 				focusOnSelect: true,
 				slidesToShow: 1
 			}

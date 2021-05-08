@@ -1973,6 +1973,9 @@ html {
 	.market__title {
 		font-size: 0.7rem;
 	}
+	.our-team__item {
+	    margin-right: 1em;
+	}
 	.aboutus {
 		background-position: center center;
 		height: 450px;
@@ -2004,6 +2007,12 @@ html {
 	}
 	.our-focus__item:nth-child(3n) {
 		margin-bottom: 2em;
+	}
+	.pricing__item + .pricing__item {
+	    margin-left: 2em;
+	}
+	.testimonials__photo {
+	    max-width: 70%
 	}
 	.form {
 	    width: 80vw;
